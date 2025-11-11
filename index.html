@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaruKunjo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="signin.js" defer type="module"></script>
+    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="563117427192-ahji9v4sbn696if75j1gkgivq90prf4s.apps.googleusercontent.com">-->
+    
+    
+
+  </head>
+  <body>
+    <main>
+      <div class="blur">
+      <div class="outer-box"> <!--box-->>
+
+      <div class="inner-box"> <!--inner box-->
+
+      <div class="forms-wrap">
+            
+
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <img src="./image/logo.png" alt="Karukunjo" /> <!--logo-->
+                <h2>||&nbsp;&nbsp;  KaruKunjo</h2>
+              </div>
+
+              <div class="heading">
+                
+                <h4>Welcome Back</h4>
+                <h6>Not registred yet?</h6>
+                <a href="#" onclick="event.preventDefault(); return false;" class="toggle"><strong>Sign up</strong></a> <!--login page-->
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Sign In" class="sign-btn" onclick="location.href='home.html';" />
+
+               
+
+                <div class="input-wrap">
+                  <button id="google-sign-btn" class="google-sign-btn1">Sign in With Google
+                    <i class="fab fa-google"></i>
+                    <img src="./image/google.png" alt="Google Icon" class="google-icon">
+                  </button>
+                </div>
+               
+                  <p class="text">
+                  
+                    <a href="#" onclick="event.preventDefault(); return false;"><strong>Forgot your password?</strong></a>  <!--redirect you to your email-->
+                    </p>
+               
+                    <br>
+                    <div class="input-wrap1">
+                      <button id="phone" class="phone">
+                        <img src="./image/otp.png" alt="phone icon" class="phone-icon">
+                      </button>
+
+                      <button id="facebook" class="facebook">
+                        <img src="./image/facebook1.png" alt="facebook icon" class="facebook-icon">
+                      </button>
+
+                    </div>
+                
+              </div>
+            </form>
+
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                    <img src="./image/logo.png" alt="" /> <!--logo-->
+        
+                    <h2>||&nbsp;&nbsp;  KaruKunjo</h2>
+              </div>
+        
+              <div class="heading1">
+        
+                  
+                <h4>Get Started</h4>
+                  <h6>Already have an account?</h6>
+                  
+                    <a href="#" onclick="event.preventDefault(); return false;" class="toggle"><strong>Sign in</strong> </a> <!--registration page-->
+              </div>
+        
+              <div class="actual-form">
+        
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                  />
+                  <label>Name</label>  <!--registration name-->
+              </div>
+              <div class="input-wrap">
+                <input type="tel" class="input-field" id="phone" autocomplete="off" required />
+                <label>Phone Number</label>
+            </div>
+            <div class="input-wrap">
+              <input type="email" class="input-field" id="email" autocomplete="off" />
+              <label>Email (Optional)</label>
+            </div>
+        
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                  />
+                  <label>Password</label>  <!--registration pass-->
+              </div>
+        
+                <input type="submit" value="Sign up" class="sign-btn" />
+                <p class="text1">
+                  By signing up, I agree to the
+                  <a href="Terms of Services.txt" >Terms of Services</a> and
+                  <a href="Privacy policy.txt">Privacy Policy</a>
+                </p>
+              
+              
+              </div>
+              <br>
+                    </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./image/img1.jpg" class="image img-1 show" alt="" />
+              <img src="./image/img2.jpg" class="image img-2 " alt="" />
+              <img src="./image/img3.jpg" class="image img-3 " alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                 
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span  data-value="2"></span>
+                <span  data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

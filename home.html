@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="563117427192-vf4tghrqh9smlqmm9otqdfh1n1lld56v.apps.googleusercontent.com">
+    <title>Home</title>
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylehome.css">
+    <!--login page-->
+    <link href="index.html">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+     <header class="header">
+        <a href="home.html" class="logo"><i class="ri-store-2-line">Karukunjo</i>
+        </a>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here" id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line">
+                <span class="item-count"></span>
+            </div>
+            <a href="index.html" id="login-btn">
+                <i class="ri-user-line"></i>
+            </a>
+            
+        </div>
+
+     </header>
+    <!-- header section ends  -->
+
+
+    <!-- closer btn  -->
+
+     
+
+    <!-- navbar start  -->
+
+     <div class="navbar">
+        <button id="closer" class="ri-close-line"></button>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+       
+
+
+     </div>
+
+    <!-- navbar end  -->
+
+
+    <!-- shopping cart start  -->
+
+    <div class="shopping-cart">
+        <!-- Cross button to close the cart -->
+        <button id="close-cart" class="close-cart-btn">×</button>
+
+        <div id="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <h3 class="total">Total: <span id="total-price">0</span> </h3>
+        <button id="update-cart" class="btn">Update Cart</button>
+        <a href="checkout.html" id="proceed-to-payment" class="btn">Proceed to Checkout</a>
+        <button id="clear-all" class="btn">Clear All</button>
+    </div>
+
+    <!-- shopping cart end  -->
+
+     
+
+    <!-- home section starts  -->
+
+    <section class="home">
+
+        <div class="slides-container">
+            <div class="slide active">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>POTTERY JUGS</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/product22.png" alt=" ">
+
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>JUTE BASKETS</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/product21.png" alt=" ">
+
+                </div>
+            </div>
+            <div class="slide active">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>WOODEN JEWELLERY BOXES</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/product26.png" alt=" ">
+
+                </div>
+
+        </div>
+        <div id="slide-next" onclick="next()" class="ri-arrow-right-line"></div>
+        <div id="slide-prev" onclick="prev()" class="ri-arrow-left-line"></div>
+     </section>
+
+    <!-- home section ends -->
+
+
+    <!-- banner section starts  -->
+
+     <section class="banner-container">
+       
+            <div class="banner">
+                <img src="image/product11.jpg" alt=" ">
+                <div class="content">
+                    <span>Limited Offer</span>
+                    <h3>upto 20%</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+
+            </div>
+        
+            <div class="banner">
+                <img src="image/product12.jpg" alt=" ">
+                <div class="content">
+                    <span>Limited Offer</span>
+                    <h3>upto 20%</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+
+            </div>
+
+            <div class="banner">
+                <img src="image/product6.jpg" alt=" ">
+                <div class="content">
+                    <span>Limited Offer</span>
+                    <h3>upto 20%</h3>
+                    <a href="shop.html" class="btn">Shop now</a>
+                </div>
+
+            </div>
+     </section>
+
+    <!-- banner section ends -->
+
+
+
+
+
+
+
+    <!-- footer section start  -->
+     <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="ri-arrow-right-line"></i>Home</a>
+                <a href="shop.html"><i class="ri-arrow-right-line"></i>Shop</a>
+                <a href="about.html"><i class="ri-arrow-right-line"></i>About</a>
+                <a href="team.html"><i class="ri-arrow-right-line"></i>Team</a>
+                <a href="blog.html"><i class="ri-arrow-right-line"></i>Blog</a>
+                <a href="contact.html"><i class="ri-arrow-right-line"></i>Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Order</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Wishlist</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Account</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Favorite</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>Terms of Users</a>
+                
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+                <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+               
+                
+            </div>
+            
+        </div>
+
+
+     </section> 
+     <section class="credit">
+        created by pandaginners | all rights reserved!
+
+     </section>
+        <!-- footer section end  -->
+
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
