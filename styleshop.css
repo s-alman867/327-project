@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+
+  body{
+    background-color: #e6dbc7;
+  }
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+    
+  
+html::-webkit-scrollbar{
+    width:1rem;
+}
+  
+html::-webkit-scrollbar-track{
+    background: #eae0dc;
+}
+  
+html::-webkit-scrollbar-thumb{
+    background: #b58d7e;
+}
+section{
+    padding:3rem 9%;
+  }
+  
+.heading{
+    background: #806043;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 2%;
+    border-radius: 3rem;
+} 
+  
+.heading h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:#5e473e;
+}
+  
+.heading p{
+    font-size: 2rem;
+    color:#31231e;
+}
+
+.heading p a{
+    color: #5e473e;
+}
+
+ .heading p a:hover {
+    color: #845f51;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid #5e473e;
+    padding-bottom: 1.5rem;
+
+} 
+
+.title span{
+    font-size: 2.5rem;
+    color: #5e4730;
+}
+
+title a{
+    font-size: 1.5rem;
+    color: #b58d7e;
+}
+
+.title a:hover{
+    transform: translateX(-3px);
+    color:#9e7464;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.9rem 3rem;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    background: linear-gradient(135deg, #b58d7e, #845f51);
+    color: #faf7f6;
+    cursor: pointer;
+    border-radius: 1rem;
+} 
+
+.btn:hover{
+    background:linear-gradient(135deg, #945f51, #b58d7e);
+}
+
+.header{
+    padding:2rem 9%;
+    position: sticky;
+    top:0; 
+    left:0; 
+    right:0;
+    z-index: 100;
+    background: #f0e8e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: #5e473e;
+    font-weight: 500;
+}
+
+.header .logo i{
+    padding-right: .3rem;
+}
+
+.header .search-form{
+    height: 5rem;
+    width:50rem;
+    border-radius: .75rem;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    background: #f0e8e4;
+    align-items: center;
+    border: 0.1rem solid #caab9f;
+}
+
+.header .search-form input{
+    height:100%;
+    width:100%;
+    padding:0 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    background: transparent;
+}
+
+.header .search-form input::placeholder {
+    color: #5e473e
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.7rem;
+    cursor: pointer;
+    color: #5e473e;
+}
+
+.header .search-form label :hover{
+    color: #9e7464;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header .icons div {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #5e473e;
+}
+
+.header .icons div:hover{
+    color: #9e7464;
+}
+
+#search-btn{
+    display: none;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+      }
+}
+
+.navbar .ri-close-line{
+    position: fixed;
+    top:4rem; 
+    right:4.5rem;
+    font-size: 5rem;
+    cursor: pointer;
+    z-index: 10000;
+    color: #5e473e;
+    animation: rotate .4s linear .4s backwards;
+    display: none;
+    background: none;
+}
+
+.navbar .ri-close-line:hover {
+    color: #9e7464;
+}
+
+.navbar{
+    position: fixed;
+    top:-1.5%; 
+    right:-101%;
+    bottom: 1.5%;
+    z-index: 1000;
+    width:35rem;
+    /*height: 100vh;*/
+    background: #f0e8e4;
+    display: flex;
+    margin: 2%;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.navbar.active{
+    right:-1%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    transition: .4s linear;
+}
+
+.navbar a {
+    margin:1rem 0;
+    font-size: 2.5rem;
+    color: #5e473e;
+}
+
+.navbar a:hover{
+    color: #9e7464;
+}
+
+.cart-item {
+    position: relative; /* This allows absolute positioning of the close icon */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 50px; /* Adjust the size of the image as needed */
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover; /* Makes sure the image fits well within the box */
+}
+
+.content {
+    flex-grow: 1; /* Ensures the content section takes up remaining space */
+}
+
+.price {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.multiply {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.item-total {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.quantity-container .qnt-label {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.quantity-container input {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px; /* Positions the close icon at the top-right corner */
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(136, 2, 2);
+}
+
+/* Scrollbar for cart container */
+#cart-items-container {
+    padding-top: 0.8px;
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+    margin-top: 30px;
+}
+
+/* Styling for custom scrollbar in Webkit browsers (Chrome, Safari, etc.) */
+#cart-items-container::-webkit-scrollbar {
+    
+    width: 8px; 
+}
+
+#cart-items-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+#cart-items-container::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 4px;
+}
+
+#cart-items-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+/* Cart container overall layout */
+.shopping-cart {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 100;
+}
+
+/* When cart is active (visible) */
+.shopping-cart.active {
+    transform: translateY(0); /* Moves it to its normal position */
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+/* Style the close cart button */
+.close-cart-btn {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 4rem; 
+    background-color: transparent;
+    border: none;
+    color: #5e473e;
+    cursor: pointer;
+    z-index: 1001; 
+    transition: color 0.3s, transform 0.3s; 
+}
+
+/* Rotate the button on hover */
+.close-cart-btn:hover {
+    color: #9e7464; 
+    transform: rotate(180deg); 
+}
+
+/* Add a rotation effect when the button is clicked */
+.close-cart-btn:active {
+    transform: rotate(360deg); 
+}
+
+
+.footer{
+    margin: 2%;
+    border-radius: 3rem;
+    background: #f0e8e4;
+}  
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #5e473e;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.6rem;
+    color: #b58d7e;
+    padding: 1rem;
+}
+
+.footer .box-container .box a{
+    font-size: 1.4rem;
+        color: #5e473e;
+        padding: 1rem 0;
+        display: block;
+        display: flex;
+        align-items: center;
+
+}
+
+.footer .box-container .box a:hover {
+    color: #9e7464;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #5e473e;
+    font-size: 1.7rem;
+}
+.login-container {
+    position: fixed;
+    top: 20%;
+    right: -101%; 
+    z-index: 1000;
+    width: 20rem;
+    background: #f0e8e4;
+    display: flex;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 1rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: .4s linear;
+}
+
+.login-container.active {
+    right: 5%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+}
+
+.login-button {
+    font-size: 2rem;
+    color: #5e473e;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    color: #9e7464;
+    background-color: #e0d0c8;
+}
+
+#login-btn {
+    cursor: pointer;
+}
+.credit {
+    text-align: center;
+    font-size: 2rem;
+    color: #5e473e;
+    background: #f0e8e4;
+    border-radius: 3rem;
+}
+.category-navbar {
+    background-color: #b69677;
+    padding: 5rem 10px;
+    margin: 2%;
+    border-radius: 3rem;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    display: inline-block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #845f51;
+}
+
+.category-links {
+    display: none; /* hidden by default */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.category-links.active {
+    display: flex;
+}
+
+.category-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+.category-links a:hover {
+    background-color: #bbb;
+}
+
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color:#e6dbc7 ;
+}
+
+.products .box-container .box{
+    position: relative;
+    background: #e6dbc7;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 0.1rem solid #e6dbc7;
+    height: 35rem; /* Adjust this to fit your design */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+   
+    
+}
+
+.products .box-container .box .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.products .box-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    object-position: center; 
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.2);
+  
+
+
+}
+.products .box-container .box:hover .icons {
+    opacity: 1;
+}
+
+.products .box-container .box .icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 219, 199, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.products .box-container .box .icons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    background: #806043;
+    color: #e6dbc7;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.products .box-container .box .icons button i {
+    font-size: 2rem;
+}
+
+.products .box-container .box .icons button:hover {
+    background: #5e4730;
+    color: #f5e8d9;
+}
+
+.products .box-container .box .content{
+    padding: 1.5rem 2rem;
+}
+.products .box-container .box .content .price{
+    font-size: 1.8rem;
+    color: #945f51;
+
+}
+.products .box-container .box .content h3{
+    font-size: 2rem;
+    color: #945f51;
+    padding: .5rem 0;
+
+}
+.products .box-container .box .content .stars{
+    font-size: 1.8rem;
+
+}
+.products .box-container .box .content .stars i{
+    color: gold;
+}
+.products .box-container .box .content .stars span{
+    color: #b58d7e;
+}

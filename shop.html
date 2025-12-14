@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="styleshop.css">
+    <link href="index.html">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="shop.html" class="logo"><i class="ri-store-2-line">Karukunjo</i>
+        </a>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here" id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line">
+                <span class="item-count"></span>
+            </div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+
+     </header>
+    <!-- header section ends  -->
+
+
+    <!-- closer btn  -->
+
+    
+    <!-- navbar start  -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <button id="closer" class="ri-close-line"></button>
+
+     </div>
+    <!-- navbar end  -->
+
+
+    <!-- shopping cart start  -->
+    <div class="shopping-cart">
+        <!-- Cross button to close the cart -->
+        <button id="close-cart" class="close-cart-btn">×</button>
+
+        <div id="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <h3 class="total">Total: <span id="total-price">0</span> </h3>
+        <button id="update-cart" class="btn">Update Cart</button>
+        <a href="checkout.html" id="proceed-to-payment" class="btn">Proceed to Checkout</a>
+        <button id="clear-all" class="btn">Clear All</button>
+    </div>
+    <!-- shopping cart end  -->
+
+
+    <!-- login form start  -->
+    <div class="login-container" id="login-container">
+        <a href="index.html" class="login-button">Login Now</a>
+    </div>
+    <!-- login form end  -->
+
+
+    <!-- heading section start -->
+
+
+
+    <!-- heading section end -->
+
+
+    <!-- category section start -->
+    <div class="category-navbar">
+        <div class="category-header">
+            <h1 class="title"><span>Our Categories</span> </h1>
+            <button class="menu-btn">&#9776;</button> <!-- Menu Icon (☰) -->
+        </div>
+        <div class="category-links">
+            <a href="bamboo.html">Bamboo</a>
+            <a href="brass.html">Brass</a>
+  
+            <a href="cane.html">Cane</a>
+            <a href="ceramic.html">Ceramic</a>
+            <a href="clay.html">Clay</a>
+           
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    
+
+
+    <section class="products">
+
+        <h1 class="title"><span>Our Products</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="5" data-name="Ceramic Cup" data-price="140" data-image="./image/ceramic-Black-red_Ceramic_Cup_Saucer-removebg-preview.png" >
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+            
+                <div class="image">
+                    <img src="./image/ceramic-Black-red_Ceramic_Cup_Saucer-removebg-preview.png" alt="Ceramic Cup">
+                </div>
+            
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Ceramic Cup</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="6"  data-name="Brass Lamp Base" data-price="140" data-image="./image/brass-Brass_lamp_Base-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+            
+                <div class="image">
+                    <img src="./image/brass-Brass_lamp_Base-removebg-preview.png" alt="Brass Lamp Base">
+                </div>
+            
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Brass Lamp Base</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="7" data-name="Clay Glass" data-price="140" data-image="./image/clay-Clay_Glass-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+            
+                <div class="image">
+                    <img src="./image/clay-Clay_Glass-removebg-preview.png" alt="Clay Glass">
+                </div>
+            
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Clay Glass</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="8" data-name="Curry Bowl" data-price="140" data-image="./image/clay-Clay_Deep_Curve_Round_Curry_Bowl_With_Lid-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+            
+                <div class="image">
+                    <img src="./image/clay-Clay_Deep_Curve_Round_Curry_Bowl_With_Lid-removebg-preview.png" alt="Curry Bowl">
+                </div>
+            
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Curry Bowl</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="9" data-name="Terracotta Hari Patil" data-price="140" data-image="./image/clay-Clay_Terracotta_Hari_Patil_Set-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+            
+                <div class="image">
+                    <img src="./image/clay-Clay_Terracotta_Hari_Patil_Set-removebg-preview.png" alt="Terracotta Hari Patil">
+                </div>
+            
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Terracotta Hari Patil</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="10" data-name="Terracotta Wall hanging" data-price="140" data-image="./image/clay-Terracotta_Wall_hanging-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/clay-Terracotta_Wall_hanging-removebg-preview.png" alt="Terracotta Wall hanging">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Terracotta Wall hanging</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="11" data-name="Aqua Soft Doll" data-price="140" data-image="./image/Cotton-Aqua_Soft_Doll-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/Cane_Photo_Frame-removebg-preview.png" alt="Aqua Soft Doll">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Cane photo Frame</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="12" data-name="Baby Rickshaw" data-price="140" data-image="./image/Iron-Baby_Rickshaw-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/Iron-Baby_Rickshaw-removebg-preview.png" alt="Baby Rickshaw">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Baby Rickshaw</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="13" data-name="Baby Taxi" data-price="140" data-image="./image/Iron-baby_Taxi-1228-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/Iron-baby_Taxi-1228-removebg-preview.png" alt="Baby Taxi">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Baby Taxi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="14" data-name="Mahogany Three Wheeler" data-price="140" data-image="./image/wood-Mahogany_Three_Wheeler_Car-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/wood-Mahogany_Three_Wheeler_Car-removebg-preview.png" alt="Mahogany Three Wheeler">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Mahogany Three Wheeler</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="15" data-name="Wooden Office Stationary Holder" data-price="140" data-image="./image/wood-Wooden_Office_Stationary_Holder-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/wood-Wooden_Office_Stationary_Holder-removebg-preview.png" alt="Wooden Office Stationary Holder">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Wooden Office Stationary Holder</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+           
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="17" data-name="Ivory Woollen Carpet" data-price="140" data-image="./image/wool-Ivory_Woollen_Carpet-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/wool-Ivory_Woollen_Carpet-removebg-preview.png" alt="Ivory Woollen Carpet">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Ivory Woollen Carpet</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="18" data-name="Woollen Door Mat" data-price="140" data-image="./image/wool-Beige_Woollen_Door_Mat-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/wool-Beige_Woollen_Door_Mat-removebg-preview.png" alt="Woollen Door Mat">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Woollen Door Mat</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="19" data-name="Engraved Wall Hanging" data-price="140" data-image="./image/brass-Brass_Engraved_Wall_Hanging-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/brass-Brass_Engraved_Wall_Hanging-removebg-preview.png" alt="Engraved Wall Hanging">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Engraved Wall Hanging</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="20" data-name="Oxidized Seated Deer" data-price="140" data-image="./image/brass-Brass_Oxidized_Seated_Deer-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/brass-Brass_Oxidized_Seated_Deer-removebg-preview.png" alt="Oxidized Seated Deer">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Oxidized Seated Deer</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="21" data-name="Bamboo Plant Holder" data-price="140" data-image="./image/bamboo-Bamboo_Plant_Holder_-small-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/bamboo-Bamboo_Plant_Holder_-small-removebg-preview.png" alt="Bamboo Plant Holder">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Bamboo Plant Holder</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="22" data-name="Oxidized Elephant" data-price="140" data-image="./image/brass-Brass_Oxidized_Elephant-removebg-preview.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/brass-Brass_Oxidized_Elephant-removebg-preview.png" alt="Oxidized Elephant">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Oxidized Elephant</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <button class="add-to-cart" data-id="23" data-name="Brass Rickshaw" data-price="140" data-image="./image/Brass-Brass__Rickshaw-removebg-previ.png">
+                        <i class="ri-shopping-cart-line"></i>
+                    </button>
+                    <button><i class="ri-heart-line"></i></button>
+                    <button><i class="ri-eye-line"></i></button>
+                </div>
+                <div class="image">
+                    <img src="./image/Brass-Brass__Rickshaw-removebg-previ.png" alt="Brass Rickshaw">
+                </div>
+                <div class="content">
+                    <div class="price">140</div>
+                    <h3>Brass Rickshaw</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (50)</span>
+                    </div>
+                </div>
+            </div>
+            
+           
+            
+
+
+        </div>
+    </section>
+    <!-- products section end -->
+
+
+
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="ri-arrow-right-line"></i>Home</a>
+                <a href="shop.html"><i class="ri-arrow-right-line"></i>Shop</a>
+                <a href="about.html"><i class="ri-arrow-right-line"></i>About</a>
+                
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Order</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Wishlist</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Favorite</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>Terms of Users</a>
+                
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+                <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+               
+                
+            </div>
+            
+        </div>
+
+
+     </section> 
+     <section class="credit">
+        created by Salman | all rights reserved!
+
+     </section>
+    <!-- footer section end  -->
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+
+</body>
+
+</html>
