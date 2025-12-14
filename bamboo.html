@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo</title>
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="styleshop.css">
+    <link href="index.html">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="shop.html" class="logo"><i class="ri-store-2-line">Karukunjo</i>
+        </a>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here" id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line">
+                <span class="item-count"></span>
+            </div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+
+     </header>
+    <!-- header section ends  -->
+
+
+    <!-- closer btn  -->
+
+    
+    <!-- navbar start  -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div id="closer" class="ri-close-line"></div>
+
+     </div>
+    <!-- navbar end  -->
+
+
+       <!-- shopping cart start  -->
+       <div class="shopping-cart">
+        <!-- Cross button to close the cart -->
+        <button id="close-cart" class="close-cart-btn">×</button>
+
+        <div id="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <h3 class="total">Total: <span id="total-price">0</span> </h3>
+        <button id="update-cart" class="btn">Update Cart</button>
+        <a href="checkout.html" id="proceed-to-payment" class="btn">Proceed to Checkout</a>
+        <button id="clear-all" class="btn">Clear All</button>
+    </div>
+    <!-- shopping cart end  -->
+
+
+
+    <!-- login form start  -->
+    <div class="login-container" id="login-container">
+        <a href="index.html" class="login-button">Login Now</a>
+    </div>
+    <!-- login form end  -->
+
+
+    <!-- heading section start -->
+
+   
+
+    <!-- category section start -->
+    <div class="category-navbar">
+        <div class="category-header">
+            <h1 class="title"><span>Our Categories</span> </h1>
+            <button class="menu-btn">&#9776;</button> <!-- Menu Icon (☰) -->
+        </div>
+        <div class="category-links">
+            <a href="bamboo.html">Bamboo</a>
+            <a href="brass.html">Brass</a>
+  
+            <a href="cane.html">Cane</a>
+            <a href="clay.html">Clay</a>
+            <a href="wood.html">Wood</a>
+           
+            
+            
+            
+            
+            
+        </div>
+    </div>
+
+    <section class="products">
+
+
+
+        <h1 class="title"><span>Bamboo</span> </h1>
+        <div class="box-container">
+
+           
+ <!-- Box 1: Bamboo Plant Holder small -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="0" 
+            data-name="Bamboo Plant Holder small" 
+            data-price="240" 
+            data-image="./image/bamboo-Bamboo_Plant_Holder_-small-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/bamboo-Bamboo_Plant_Holder_-small-removebg-preview.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">240</div>
+        <h3>Bamboo Plant Holder small</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 2: Bamboo Bench -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="1" 
+            data-name="Bamboo Bench" 
+            data-price="140" 
+            data-image="./image/Bamboo Bench.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Bench.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Bench</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 3: Bamboo Book Shelf -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="2" 
+            data-name="Bamboo Book Shelf" 
+            data-price="540" 
+            data-image="./image/Bamboo Book Shelf.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Book Shelf.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">540</div>
+        <h3>Bamboo Book Shelf</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 4: Bamboo Brush Holder -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="3" 
+            data-name="Bamboo Brush Holder" 
+            data-price="140" 
+            data-image="./image/Bamboo Brush holder.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Brush holder.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Brush Holder</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 5: Bamboo Chair -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="4" 
+            data-name="Bamboo Chair" 
+            data-price="140" 
+            data-image="./image/Bamboo Chair.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Chair.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Chair</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 6: Bamboo Flower Buzz -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="5" 
+            data-name="Bamboo Flower Buzz" 
+            data-price="140" 
+            data-image="./image/Bamboo Flower buzz.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Flower buzz.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Flower Buzz</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 7: Bamboo Hanger for Decore -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="6" 
+            data-name="Bamboo Hanger for Decore" 
+            data-price="140" 
+            data-image="./image/Bamboo hanging.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo hanging.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Hanger for Decore</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 8: Bamboo Jug -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="7" 
+            data-name="Bamboo Jug" 
+            data-price="140" 
+            data-image="./image/Bamboo Jug.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Jug.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Jug</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 9: Bamboo Nest -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="8" 
+            data-name="Bamboo Nest" 
+            data-price="140" 
+            data-image="./image/Bamboo nest.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo nest.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Nest</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 10: Bamboo Photo Frame -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="9" 
+            data-name="Bamboo Photo Frame" 
+            data-price="140" 
+            data-image="./image/Bamboo Photo Frame.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Photo Frame.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Photo Frame</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 11: Bamboo Shelf -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="10" 
+            data-name="Bamboo Shelf" 
+            data-price="140" 
+            data-image="./image/Bamboo Shelf.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo Shelf.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Shelf</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 12: Bamboo Wall Plant Holder -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="11" 
+            data-name="Bamboo Wall Plant Holder" 
+            data-price="140" 
+            data-image="./image/Bamboo wall plant holder.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo wall plant holder.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Wall Plant Holder</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box 13: Bamboo Whistle Set -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+            data-id="12" 
+            data-name="Bamboo Whistle Set" 
+            data-price="150" 
+            data-image="./image/Bamboo whistle set.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo whistle set.png" alt="">
+    </div>
+    <div class="content">
+        <div class="price">150</div>
+        <h3>Bamboo Whistle Set</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+
+          <!-- Box: Bamboo Folding Side Table -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="13" 
+                data-name="Bamboo Folding Side Table" 
+                data-price="140" 
+                data-image="./image/Bamboo_Folding_Side_Table.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo_Folding_Side_Table.png" alt="Bamboo Folding Side Table">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Folding Side Table</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Bamboo Lamp -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="14" 
+                data-name="Bamboo Lamp" 
+                data-price="140" 
+                data-image="./image/Bamboo_lamp.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo_lamp.png" alt="Bamboo Lamp">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Lamp</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Bamboo Shelf Rack -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="15" 
+                data-name="Bamboo Shelf Rack" 
+                data-price="140" 
+                data-image="./image/bamboo_shelf_rack.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/bamboo_shelf_rack.png" alt="Bamboo Shelf Rack">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Shelf Rack</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Bamboo Whistle -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="16" 
+                data-name="Bamboo Whistle" 
+                data-price="140" 
+                data-image="./image/Bamboo_whistle.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Bamboo_whistle.png" alt="Bamboo Whistle">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Bamboo Whistle</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Moi -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="17" 
+                data-name="Moi" 
+                data-price="140" 
+                data-image="./image/Moi.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Moi.png" alt="Moi">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Moi</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Weaving Bamboo Sieve Raft Round Dustpan -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="18" 
+                data-name="Weaving Bamboo Sieve Raft Round Dustpan" 
+                data-price="140" 
+                data-image="./image/Weaving_Bamboo_Sieve_Raft_Round_Dustpan-.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Weaving_Bamboo_Sieve_Raft_Round_Dustpan-.png" alt="Weaving Bamboo Sieve Raft Round Dustpan">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Weaving Bamboo Sieve Raft Round Dustpan</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Box: Wine Caddy Wine Rack Wine Holder Truck -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart" 
+                data-id="19" 
+                data-name="Wine Caddy Wine Rack Wine Holder Truck" 
+                data-price="140" 
+                data-image="./image/Wine_Caddy_Wine_rack_wine_holder_truck_wine_holder_.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Wine_Caddy_Wine_rack_wine_holder_truck_wine_holder_.png" alt="Wine Caddy Wine Rack">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Wine Caddy Wine Rack Wine Holder Truck</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+
+            
+            
+            
+        </div>
+    </section>
+    <!-- products section end -->
+
+
+
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="ri-arrow-right-line"></i>Home</a>
+                <a href="shop.html"><i class="ri-arrow-right-line"></i>Shop</a>
+                <a href="about.html"><i class="ri-arrow-right-line"></i>About</a>
+              
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Order</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Wishlist</a>
+                
+                <a href="#"><i class="ri-arrow-right-line"></i>My Favorite</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>Terms of Users</a>
+                
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+                <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+               
+                
+            </div>
+            
+        </div>
+
+
+     </section> 
+     
+    <!-- footer section end  -->
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+
+</body>
+
+</html>

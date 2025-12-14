@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clay</title>
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="styleshop.css">
+    <link href="index.html">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="shop.html" class="logo"><i class="ri-store-2-line">Karukunjo</i>
+        </a>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here" id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line">
+                <span class="item-count"></span>
+            </div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+
+     </header>
+    <!-- header section ends  -->
+
+
+    <!-- closer btn  -->
+
+    <!-- navbar start  -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div id="closer" class="ri-close-line"></div>
+
+     </div>
+    <!-- navbar end  -->
+
+
+       <!-- shopping cart start  -->
+       <div class="shopping-cart">
+        <!-- Cross button to close the cart -->
+        <button id="close-cart" class="close-cart-btn">×</button>
+
+        <div id="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <h3 class="total">Total: <span id="total-price">0</span> </h3>
+        <button id="update-cart" class="btn">Update Cart</button>
+        <a href="checkout.html" id="proceed-to-payment" class="btn">Proceed to Checkout</a>
+        <button id="clear-all" class="btn">Clear All</button>
+    </div>
+    <!-- shopping cart end  -->
+
+
+    <!-- login form start  -->
+    <div class="login-container" id="login-container">
+        <a href="index.html" class="login-button">Login Now</a>
+    </div>
+    <!-- login form end  -->
+
+
+    <!-- heading section start -->
+
+    <!-- category section start -->
+    <div class="category-navbar">
+        <div class="category-header">
+            <h1 class="title"><span>Our Categories</span> </h1>
+            <button class="menu-btn">&#9776;</button> <!-- Menu Icon (☰) -->
+        </div>
+        <div class="category-links">
+            <a href="bamboo.html">Bamboo</a>
+            <a href="brass.html">Brass</a>
+  
+            <a href="cane.html">Cane</a>
+            <a href="clay.html">Clay</a>
+           
+            <a href="wood.html">Wood</a>
+          
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <section class="products">
+
+        <h1 class="title"><span>Our Products</span> </h1>
+        <div class="box-container">
+           <!-- Clay: Engraved Clay glass -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="54"
+                data-name="Engraved Clay glass"
+                data-price="140"
+                data-image="./image/clay-Engraved_Clay_glass-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Engraved_Clay_glass-removebg-preview.png" alt="Engraved Clay glass">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Engraved Clay glass</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Engraved Clay Korai-Mini -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="55"
+                data-name="Engraved Clay Korai-Mini"
+                data-price="140"
+                data-image="./image/clay-Engraved_Clay_Korai-Mini-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Engraved_Clay_Korai-Mini-removebg-preview.png" alt="Engraved Clay Korai-Mini">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Engraved Clay Korai-Mini</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Silver Clay Hanging Tub -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="56"
+                data-name="Silver Clay Hanging Tub"
+                data-price="140"
+                data-image="./image/clay-Silver_Clay_Hanging_Tub-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Silver_Clay_Hanging_Tub-removebg-preview.png" alt="Silver Clay Hanging Tub">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Silver Clay Hanging Tub</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Deep Curve Nakshi Curry Bowl -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="57"
+                data-name="Deep Curve Nakshi Curry Bowl"
+                data-price="140"
+                data-image="./image/Clay_Deep_Curve_Nakshi_Curry_Bowl-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/Clay_Deep_Curve_Nakshi_Curry_Bowl-removebg-preview.png" alt="Deep Curve Nakshi Curry Bowl">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Deep Curve Nakshi Curry Bowl</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Black And Grey Wood Framed Clay Wall Hanging -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="58"
+                data-name="Black And Grey Wood Framed Clay Wall Hanging"
+                data-price="140"
+                data-image="./image/wood-Black_And_Grey_Wood_Framed__Clay_Wall_Hanging-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/wood-Black_And_Grey_Wood_Framed__Clay_Wall_Hanging-removebg-preview.png" alt="Black And Grey Wood Framed Clay Wall Hanging">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Black And Grey Wood Framed Clay Wall Hanging</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Terracotta Wall Hanging -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="59"
+                data-name="Terracotta Wall Hanging"
+                data-price="140"
+                data-image="./image/clay-Terracotta_Wall_hanging-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Terracotta_Wall_hanging-removebg-preview.png" alt="Terracotta Wall Hanging">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Terracotta Wall Hanging</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Terracotta round Flower Tub With Plate -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="60"
+                data-name="Terracotta round Flower Tub With Plate"
+                data-price="140"
+                data-image="./image/clay-Clay_Terracotta_round_Flower_Tub_With_Plate-Small-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Terracotta_round_Flower_Tub_With_Plate-Small-removebg-preview.png" alt="Terracotta round Flower Tub With Plate">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Terracotta round Flower Tub With Plate</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay: Clay Terracotta Hari Patil Set -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="61"
+                data-name="Clay Terracotta Hari Patil Set"
+                data-price="140"
+                data-image="./image/clay-Clay_Terracotta_Hari_Patil_Set-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Terracotta_Hari_Patil_Set-removebg-preview.png" alt="Clay Terracotta Hari Patil Set">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Terracotta Hari Patil Set</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(50)</span>
+        </div>
+    </div>
+</div>
+
+           <!-- Clay Round Bowl -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="62"
+                data-name="Clay Round Bowl"
+                data-price="140"
+                data-image="./image/clay-Clay_Round_Bowl-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Round_Bowl-removebg-preview.png" alt="Clay Round Bowl">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Round Bowl</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay quarter Plate Small -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="63"
+                data-name="Clay quarter Plate Small"
+                data-price="140"
+                data-image="./image/clay-Clay_quarter_Plate-Small-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_quarter_Plate-Small-removebg-preview.png" alt="Clay quarter Plate Small">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay quarter Plate Small</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Mug -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="64"
+                data-name="Clay Mug"
+                data-price="140"
+                data-image="./image/clay-Clay_Mug-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Mug-removebg-preview.png" alt="Clay Mug">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Mug</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Glass -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="65"
+                data-name="Clay Glass"
+                data-price="140"
+                data-image="./image/clay-Clay_Glass-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Glass-removebg-preview.png" alt="Clay Glass">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Glass</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay FlowerShape Bowl Big -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="66"
+                data-name="Clay FlowerShape Bowl Big"
+                data-price="140"
+                data-image="./image/clay-Clay_Flower_Shape_Bowl-_Big-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Flower_Shape_Bowl-_Big-removebg-preview.png" alt="Clay FlowerShape Bowl Big">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay FlowerShape Bowl Big</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Dinner plate -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="67"
+                data-name="Clay Dinner plate"
+                data-price="140"
+                data-image="./image/clay-Clay_Dinner_plate-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Dinner_plate-removebg-preview.png" alt="Clay Dinner plate">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Dinner plate</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Deep Curve Round Curry Bowl With Lid -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="68"
+                data-name="Clay Deep Curve Round Curry Bowl With Lid"
+                data-price="140"
+                data-image="./image/clay-Clay_Deep_Curve_Round_Curry_Bowl_With_Lid-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Deep_Curve_Round_Curry_Bowl_With_Lid-removebg-preview.png" alt="Clay Deep Curve Round Curry Bowl With Lid">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Deep Curve Round Curry Bowl With Lid</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Casserole with lid Big -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="69"
+                data-name="Clay Casserole with lid Big"
+                data-price="140"
+                data-image="./image/clayy-Clay_Casserole_with_lid_-Big-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clayy-Clay_Casserole_with_lid_-Big-removebg-preview.png" alt="Clay Casserole with lid Big">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Casserole with lid Big</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Casserike With Lid Midium -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="70"
+                data-name="Clay Casserike With Lid Midium"
+                data-price="140"
+                data-image="./image/clay-Clay_Casserike_With_Lid_-Midium-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_Casserike_With_Lid_-Midium-removebg-preview.png" alt="Clay Casserike With Lid Midium">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Casserike With Lid Midium</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay bowl -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="71"
+                data-name="Clay bowl"
+                data-price="140"
+                data-image="./image/clay-Clay_bowl-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay_bowl-removebg-preview.png" alt="Clay bowl">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay bowl</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clay Jug With Lid -->
+<div class="box">
+    <div class="icons">
+        <button class="add-to-cart"
+                data-id="72"
+                data-name="Clay Jug With Lid"
+                data-price="140"
+                data-image="./image/clay-Clay__Jug_With_Lid-removebg-preview.png">
+            <i class="ri-shopping-cart-line"></i>
+        </button>
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-eye-line"></i></button>
+    </div>
+    <div class="image">
+        <img src="./image/clay-Clay__Jug_With_Lid-removebg-preview.png" alt="Clay Jug With Lid">
+    </div>
+    <div class="content">
+        <div class="price">140</div>
+        <h3>Clay Jug With Lid</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50)</span>
+        </div>
+    </div>
+</div>
+
+           
+        </div>
+    </section>
+    <!-- products section end -->
+
+
+
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="ri-arrow-right-line"></i>Home</a>
+                <a href="shop.html"><i class="ri-arrow-right-line"></i>Shop</a>
+                <a href="about.html"><i class="ri-arrow-right-line"></i>About</a>
+               
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Order</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>My Wishlist</a>
+               
+                <a href="#"><i class="ri-arrow-right-line"></i>My Favorite</a>
+                <a href="#"><i class="ri-arrow-right-line"></i>Terms of Users</a>
+                
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+                <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+               
+                
+            </div>
+            
+        </div>
+
+
+     </section> 
+    
+    <!-- footer section end  -->
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+
+</body>
+
+</html>

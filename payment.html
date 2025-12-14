@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSLCommerz Payment</title>
+  <link rel="stylesheet" href="stylepayment.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout</h2>
+    <form id="paymentForm">
+        <!-- Input fields for customer and shipment info -->
+        <input type="text" name="cus_name" value="Test Customer" required />
+        <input type="email" name="cus_email" value="test@test.com" required />
+        <input type="text" name="cus_phone" value="01711111111" required />
+        <input type="text" name="cus_add1" value="Dhaka" required />
+        <input type="text" name="cus_city" value="Dhaka" required />
+        <input type="text" name="cus_postcode" value="1000" required />
+        <!-- Add any other necessary fields -->
+        
+        <!-- Pay Now Button -->
+        <button type="submit" id="payNowBtn">Pay Now</button>
+      </form>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
