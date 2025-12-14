@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+
+<!--Cart part on left-->
+
+<div class="checkout-wrapper">
+  
+  <!-- Cart Section -->
+  <div class="cart-section">
+    <div class="shopping-cart active">
+      <h2>Your Cart</h2>
+
+      <div id="cart-items-container">
+        <!-- Cart items will be injected here via JS -->
+      </div>
+
+      <div class="checkout-summary">
+        <h3 class="cart-total">Total:<span id="total-price">0</span> BDT</h3>
+        <button id="update-cart" class="btn">Update Cart</button>
+
+        <!-- New text and link below the Update Cart button -->
+        <p class="continue-shopping">
+          Not done yet? <a href="shop.html" id="continue-shopping-link">Continue Shopping</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Form Section -->
+  <div class="checkout-container">
+    <h2>Shipping Information</h2>
+    <form id="checkout-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Street address" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 0192045678" required />
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="City" required />
+
+      <label for="postal">Postal Code</label>
+      <input type="text" id="postal" name="postal" placeholder="Postal Code" required />
+
+      <!-- New Textarea box for order notes -->
+      <label for="order-notes">Additional Instructions (Optional)</label>
+      <textarea id="order-notes" name="order-notes" placeholder="Any special instructions?" rows="4"></textarea>
+    </form>
+
+    <form action="http://localhost/payment.php" method="POST" target="_blank" id="payment-form">
+      <button type="submit" class="checkout-btn">Proceed to Payment</button>
+    </form>
+
+  </div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
